@@ -53,6 +53,17 @@ namespace MoQNaire
                 itemCount++;
             }
             */
+
+            AnswerSet aSet = new AnswerSet()
+            {
+                new Answer("Big Fish", false),
+                new Answer("Big Cat", true),
+                new Answer("Small Mouse", false),
+                new Answer("Cute Dog", false),
+                new Answer("Huge Cat", false),
+            };
+
+            Debug.WriteLine(aSet);
         }
     }
 }

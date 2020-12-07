@@ -17,6 +17,24 @@ namespace MoQNaire.Models
             get => question_name;
         }
 
+        private string question_statement;
+
+        public string QuestionStatement
+        {
+            get { return question_statement; }
+            set { question_statement = value; }
+        }
+
+        private AnswerSet ans;
+
+        public AnswerSet Answers
+        {
+            get { return ans; }
+            set { ans = value; }
+        }
+
+
+
         public override string ToString()
         {
             return $"{QuestionName}";
